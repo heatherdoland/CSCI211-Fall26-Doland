@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Weather Hub</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/weatherData.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body data-theme="light">
+        <div class="page">
+            <main class="content">
+
+                <h1 id="page-title">Heather Weather</h1>
+                <p id="current-date" class="pill"></p>
+
+                <form id="controls" class="panel">
+                    <p class="form-note">*Fields are here as placeholders for design layout - changing values isn't doing anything yet.</p>
+                    <div class="control">
+                        <label for="city-select" class="control-label">City</label>
+                        <select id="city-select" name="city">
+                            <option value="GreatFalls">Great Falls</option>
+                            <option value="Helena">Helena</option>
+                            <option value="Bozeman">Bozeman</option>
+                        </select>
+                    </div>
+
+                    <fieldset id="length-select" class="control">
+                        <legend class="control-label">Forecast Length</legend>
+                        <div class="radio-row">
+                            <label class="radio"><input type="radio" name="length" value="3" checked>3 Day</label>
+                            <label class="radio"><input type="radio" name="length" value="5">5 Day</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="unit-select" class="control">
+                        <legend class="control-label">Units</legend>
+                        <div class="radio-row">
+                            <label class="radio"><input type="radio" name="units" value="imperial" checked>Imperial</label>
+                            <label class="radio"><input type="radio" name="units" value="metrid">Metric</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="control">
+                        <label for="theme-select" class="control-label">Theme</label>
+                        <select id="theme-select" name="theme">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+                </form>
+
+                <section id="forecast">
+                    <div id="day-1" class="forecast-card">
+                        <h2 class="day-name"></h2>
+                        <p class="day-date"></p>
+                        <span class="day-icon"></span>
+                        <p class="day-high"></p>
+                        <p class="day-low"></p>
+                        <p class="day-desc"></p>
+                    </div>
+
+                    <div id="day-2" class="forecast-card">
+                        <h2 class="day-name"></h2>
+                        <p class="day-date"></p>
+                        <span class="day-icon"></span>
+                        <p class="day-high"></p>
+                        <p class="day-low"></p>
+                        <p class="day-desc"></p>
+                    </div>
+
+                    <div id="day-3" class="forecast-card">
+                        <h2 class="day-name"></h2>
+                        <p class="day-date"></p>
+                        <span class="day-icon"></span>
+                        <p class="day-high"></p>
+                        <p class="day-low"></p>
+                        <p class="day-desc"></p>
+                    </div>
+
+                    <!-- <div id="day-4" class="forecast-card">
+                        <h2 class="day-name"></h2>
+                        <p class="day-date"></p>
+                        <span class="day-icon"></span>
+                        <p class="day-high"></p>
+                        <p class="day-low"></p>
+                        <p class="day-desc"></p>
+                    </div>
+
+                    <div id="day-5" class="forecast-card">
+                        <h2 class="day-name"></h2>
+                        <p class="day-date"></p>
+                        <span class="day-icon"></span>
+                        <p class="day-high"></p>
+                        <p class="day-low"></p>
+                        <p class="day-desc"></p>
+                    </div> -->
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
