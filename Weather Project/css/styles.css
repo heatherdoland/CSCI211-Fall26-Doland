@@ -6,7 +6,7 @@
 /* ---------- Custom Theme Variables ---------- */
 [data-theme="light"] {
     --sky: linear-gradient(180deg, #5d4fa8 0%, #a874c4 40%, #f09ec0 75%, #ffcfb8 100%);
-    --glow: radial-gradient(circle, rgba(255, 236, 200, 0.95) 0%, rgba(255, 190, 170. 0.55) 35%, rgba(255, 190, 170, 0) 65%);
+    --glow: radial-gradient(circle, rgba(255, 236, 200, 0.95) 0%, rgba(255, 190, 170, 0.55) 35%, rgba(255, 190, 170, 0) 65%);
     --card: rgba(255, 255, 255, 0.9);
     --fc: #2a1f5c;
     --muted: #5a4c8c;
@@ -248,5 +248,5 @@ select {
     margin: 6px 0 0;
     font-size: 14px;
     line-height: 1.35;
-    tex-align: center;
+    text-align: center;
 }
